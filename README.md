@@ -1,45 +1,35 @@
 # 🚀 Java CI/CD Pipeline with Security Scans (DevSecOps)
 
-This project demonstrates how to build a Java Maven application and implement a CI/CD pipeline with integrated security scanning using GitHub Actions.
-
----
-
 ## 📌 Overview
-
-This project implements a DevSecOps pipeline:
-
-- ☕ Java application built using Maven  
-- ⚙️ CI pipeline using GitHub Actions  
-- 🔐 Security scanning using Trivy and Gitleaks  
-- 🔄 Automated workflow on every push  
+This project demonstrates a Java Maven application with a CI/CD pipeline using GitHub Actions, including security scanning using Trivy and Gitleaks.
 
 ---
 
 ## 🛠️ Tech Stack
-
 - Java (JDK 17)
 - Maven
 - GitHub Actions
-- Trivy (Security Scanner)
-- Gitleaks (Secrets Detection)
+- Trivy
+- Gitleaks
 
 ---
 
 ## 📂 Project Structure
 
-```text
 java-ci-cd-security-pipeline/
-├── pom.xml
-├── src/
-│   └── main/
-│       └── java/
-│           └── com/
-│               └── example/
-│                   └── HelloWorld.java
-├── .github/
-│   └── workflows/
-│       └── maven-build.yml
-└── README.md
+- pom.xml
+- src/
+  - main/
+    - java/
+      - com/
+        - example/
+          - HelloWorld.java
+- .github/
+  - workflows/
+    - maven-build.yml
+- README.md
+
+---
 
 ## ⚙️ How It Works
 
@@ -53,6 +43,20 @@ java-ci-cd-security-pipeline/
 
 ## ▶️ Run Locally
 
-```bash
-mvn clean compile
-java -cp target/classes com.example.HelloWorld
+mvn clean compile  
+java -cp target/classes com.example.HelloWorld  
+
+---
+
+## 🔐 Security Features
+
+- Trivy → vulnerability scanning  
+- Gitleaks → detects secrets in code  
+
+---
+
+## 🚀 Future Improvements
+
+- Add deployment stage  
+- Add Docker integration  
+- Add testing  
