@@ -40,7 +40,7 @@ java-ci-cd-security-pipeline/
 │   └── workflows/
 │       └── maven-build.yml
 └── README.md
-
+```md
 ---
 
 ## ⚙️ How It Works
